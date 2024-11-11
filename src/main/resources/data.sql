@@ -1,0 +1,1 @@
+insert into public.s_users (uuid, email, name, password) values ('d6bffeca-8f45-41b6-82f9-7d12f2f11720', 'admin@admin.com', 'admin', '$2a$12$G8/dGv2sSCJ6zD7axIz5xOLJUJQqV.GvBUEoov2Bdco8heUm4UcO6');

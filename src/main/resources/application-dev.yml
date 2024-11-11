@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/start-one-code
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+server:
+  servlet:
+    session:
+      cookie:
+        same-site: strict
+start-one-code:
+  security:
+    JWT_KEY: jxgEQeXHuPq8VdbyYFNkANdudQ53YUn4
+    JWT_HEADER: Authorization
+    token-expiration-time: 86400000
+    csrf-prefix: _csrf
+  application:
+    name: Start one code
+    token-name: JWT token
+  frontend-address: http://localhost:4200
+
